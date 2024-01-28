@@ -6,7 +6,6 @@ token = os.environ['GITHUB_API_KEY']
 auth = Auth.Token(token)
 github = Github(auth=auth)
 
-github.get_user().login
 orgs = github.get_organization('app-sentinel')
             
 print(orgs.login)
